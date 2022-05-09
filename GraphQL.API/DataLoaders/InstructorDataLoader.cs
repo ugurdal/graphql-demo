@@ -8,7 +8,7 @@ public class InstructorDataLoader : BatchDataLoader<Guid, Instructor>
     private readonly InstructorRepository _instructorRepository;
 
     public InstructorDataLoader(InstructorRepository instructorRepository, IBatchScheduler batchScheduler, DataLoaderOptions options = null)
-    : base(batchScheduler, options)
+        : base(batchScheduler, options)
     {
         this._instructorRepository = instructorRepository;
     }
